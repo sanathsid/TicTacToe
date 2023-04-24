@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+nav {
+    background-color: black;
+    color: beige;
+    height: 65px;
+    font-size: 20px;
+    display: flex;
+    padding: 0 10;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.gameBox {
+    border: 3px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameBox:hover {
+    background-color: rgb(205, 244, 250);
+}
+
+.gameInfo {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0 30px;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    background-color: papayawhip;
+    font-size: 22px;
+    padding: 5px 10px;
+    margin: 0 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:650px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+    .gameInfo {
+        margin-top: 30px;
+    }
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
