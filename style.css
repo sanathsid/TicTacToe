@@ -50,11 +50,6 @@ nav ul {
     padding: 0 30px;
 }
 
-.imgbox img {
-    width: 0;
-    transition: width 1s ease-in-out;
-}
-
 .info {
     font-size: 20px;
 }
